@@ -1,10 +1,8 @@
 import React from 'react';
-import Dashboard from './components/Dashboard'
+import Dashboard from './components/Dashboard';
 
 function Root() {
-  return (
-    <Dashboard />
-  );
+  return <Dashboard />;
 }
 
 export default Root;
