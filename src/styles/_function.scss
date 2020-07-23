@@ -1,0 +1,11 @@
+$repeat: 50;
+
+@for $i from 1 through $repeat {
+  .applicants-list__card:nth-child(n + #{$i}) {
+    & .applicants-list__circle {
+      $color: rgb(random(255), random(255), random(255));
+      color: rgba($color, 100%);
+      background: rgba($color, 20%);
+    }
+  }
+}

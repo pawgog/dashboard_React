@@ -44,6 +44,7 @@
 }
 
 .applicants-search {
+  position: relative;
   margin: 1rem 0;
 
   & .applicants-input > div {
@@ -53,6 +54,14 @@
   & .applicants-select {
     min-width: 100px;
     margin: 0 0.5rem;
+
+    &__lang {
+      position: absolute;
+      right: 1rem;
+      & > div {
+        color: $grey;
+      }
+    }
   }
 }
 
@@ -89,6 +98,23 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@include tablet {
+  .applicants-top-bar__statistic {
+    display: none;
+  }
+  .applicants-search {
+    & .applicants-select {
+      display: block;
+      margin: 1rem 0;
+    }
+    & .applicants-select__lang {
+      position: relative;
+      display: block;
+      margin: 1rem;
     }
   }
 }

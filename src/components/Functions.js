@@ -18,3 +18,7 @@ export const sortByStatus = (data) => {
 export const getNameInitials = (name) => {
   return name.split(' ').map(x => x.charAt(0)).join('').substr(0, 2).toUpperCase()
 }
+
+export const getProperStatusName = (name) => {
+  return name.split('_').map(x => x.charAt(0).toUpperCase() + x.substr(1)).join(' ')
+}
