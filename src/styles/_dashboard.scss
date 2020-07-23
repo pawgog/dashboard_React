@@ -100,6 +100,21 @@
       transform: translate(-50%, -50%);
     }
   }
+  &__appointment,
+  &__bid {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__appointment {
+    margin: 0.8rem 0;
+    background-color: $grey;
+  }
+  &__bid {
+    background-color: $yellow;
+  }
 }
 
 @include tablet {
@@ -115,6 +130,14 @@
       position: relative;
       display: block;
       margin: 1rem;
+      right: 0;
+      & > div {
+        width: 100%;
+      }
     }
+  }
+  .applicants-input,
+  .applicants-select > div {
+    width: 100%;
   }
 }
