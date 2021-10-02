@@ -37,7 +37,7 @@ class Dashboard extends React.Component {
   };
 
   componentDidMount() {
-    fetch('https://dashboard-applicants234.herokuapp.com/applicants')
+    fetch('https://dashboard-applicants-2021.herokuapp.com/applicants')
       .then((response) => response.json())
       .then((data) =>
         this.setState({
